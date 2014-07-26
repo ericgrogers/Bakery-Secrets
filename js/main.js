@@ -5,12 +5,16 @@
     //========== Load the Header ========================
     var loadHead = function(){
 
+        var wrapper = $('#wrapper');
         var header = $('header');
         var navLinks = $('nav a');
         var logo = $('h1');
         var tagline = $('header h2');
 
         window.onload = function(){
+
+            //wrapper
+            $(wrapper).show(0);
 
             // header
             $(header).hide(0).slideDown(1000);

@@ -53,6 +53,10 @@ table {
 
 /*=========== Site Wide Styles*/
 
+#wrapper {
+    display: none;
+}
+
 body {
     background: url("../images/backgrounds/straws.png") repeat;
     font-family: Georgia, Times, "Times New Roman", serif;
