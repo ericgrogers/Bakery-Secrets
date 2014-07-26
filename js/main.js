@@ -60,14 +60,16 @@
             triggerOnce: true
         };
 
-        //------- Add the waypoints. ------
-        $(aboutContent).waypoint(point);
-        $(dataChart).waypoint(point);
-        $(imgGallery).waypoint(point);
-        $(gallery).waypoint(point);
-        $(images).waypoint(point);
-        $(video).waypoint(point);
-        $(locations).waypoint(point);
+        //------- Add delayed waypoints. ------
+        setTimeout(function(){
+            $(aboutContent).waypoint(point);
+            $(dataChart).waypoint(point);
+            $(imgGallery).waypoint(point);
+            $(gallery).waypoint(point);
+            $(images).waypoint(point);
+            $(video).waypoint(point);
+            $(locations).waypoint(point);
+        }, 3000);
 
     };
 
