@@ -2,7 +2,7 @@
 
 (function($){
 
-    // Load the Header
+    //========== Load the Header ========================
     var loadHead = function(){
 
         var header = $('header');
@@ -16,7 +16,7 @@
             $(header).hide(0).slideDown(1000);
 
             // navigation links
-            $(navLinks).fadeOut().each(function(i,elem){
+            $(navLinks).fadeOut(0).each(function(i,elem){
                 setTimeout(function(){
                     $(elem).fadeIn(i*200);
                 }, 2000);
@@ -34,14 +34,50 @@
 
         }
     };
+//--------------------- End of header functionality. ---------------------
 
-    // Slider functionality.
+    //=============== load the content with Waypoints. ====================================
+    var loadContent = function(){
+
+        var aboutContent = $('.aboutContent'),
+            dataChart = $('.dataChart'),
+            imgGallery = $('#imageGallery'),
+            gallery = $(imgGallery).find('#gallery'),
+            images = $(gallery).find('img'),
+            video = $('#video'),
+            locations = $('#locations')
+        ;
+
+        var point = {
+            handler: function () {
+                $(this).animate({opacity: 1}, 500);
+            },
+            offset: '50%',
+            triggerOnce: true
+        };
+
+        //------- Add the waypoints. ------
+        $(aboutContent).waypoint(point);
+        $(dataChart).waypoint(point);
+        $(imgGallery).waypoint(point);
+        $(gallery).waypoint(point);
+        $(images).waypoint(point);
+        $(video).waypoint(point);
+        $(locations).waypoint(point);
+
+    };
+
+//---------------- End of content functionality --------------------
+
+
+
+    //================ Slider functionality. ==================================
     var slider = function(){
 
         // configurations
         var width = 1440;
-        var animationSpeed = 1000;
-        var pause = 5000;
+        var animationSpeed = 600;
+        var pause = 8000;
         var currentSlide = 1;
         var signUp = $('#signup');
 
@@ -91,7 +127,9 @@
         // Initialize the slider.
         sliderInit();
     };
+//----------------- End of slider functionality. --------------------------
 
+    //============= INIT ========================================
         var init = function(){
             loadHead();
             setTimeout(function(){
@@ -101,6 +139,7 @@
                 $('#signup').animate({opacity: 1}, 500);
             }, 2000);
 
+            loadContent();
         };
 
 

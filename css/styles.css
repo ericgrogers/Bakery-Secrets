@@ -190,9 +190,27 @@ h2 {
     background-color: #fff;
     border: 3px solid #eee;
     border-radius: 10px;
-    margin-right: 104px;
+    margin: 50px 104px 0 0;
     padding: 10px;
     float: left;
+    opacity: 0;
+}
+
+#about h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    color: #4d4d4d;
+}
+
+#about a {
+    color: #9E001E;
 }
 
 .dataChart {
@@ -201,7 +219,9 @@ h2 {
     background-color: #fff;
     border: 3px solid #eee;
     border-radius: 10px;
+    margin-top: 50px;
     float: left;
+    opacity: 0;
 }
 
 .separator {
@@ -209,4 +229,50 @@ h2 {
     width: 100%;
     height: 50px;
     background: url("../images/backgrounds/separator.gif") repeat;
+}
+
+
+/*-------------- Image Gallery ------------*/
+
+#imageGallery {
+    width: 100%;
+    height: 700px;
+    opacity: 0;
+}
+
+#imageGallery h3 {
+    font-family: 'Chewy', Cursive;
+    font-size: 24px;
+    color: #ffb000;
+    text-align: center;
+    margin: 50px auto 0 auto;
+}
+
+#imageGallery h3>a {
+    color: #9e001e;
+}
+
+#gallery {
+    width: 660px;
+    height: 420px;
+    background-color: #ffe78f;
+    background-image: url("../images/backgrounds/screen.png");
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+#gallery img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    margin: 20px 0 0 85px;
+    float: left;
+}
+
+#gallery img:nth-of-type(1), #gallery img:nth-of-type(4) {
+    margin-left: 20px;
+}
+
+#gallery img:nth-of-type(1), #gallery img:nth-of-type(2), #gallery img:nth-of-type(3) {
+    margin-bottom: 50px;
 }
