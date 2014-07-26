@@ -47,31 +47,66 @@
             dataChart = $('.dataChart'),
             imgGallery = $('#imageGallery'),
             gallery = $(imgGallery).find('#gallery'),
+            imageList = $(gallery).find('li'),
             images = $(gallery).find('img'),
             video = $('#video'),
+            pizzaVid = $('#pizzaVid'),
             locations = $('#locations')
         ;
 
+        // hide the images on load
+        $(imageList).fadeOut(0);
+
+        // configure waypoint options.
         var point = {
-            handler: function () {
+            handler: function(){
                 $(this).animate({opacity: 1}, 500);
             },
             offset: '50%',
             triggerOnce: true
         };
 
+        //  waypoint for the images li.
+        var imgPoint = {
+            handler: function(){
+                $(this).animate({opacity: 1}, 500);
+                setTimeout(function(){
+                    $(imageList).each(function(i, elem){
+                        $(elem).fadeIn(i*800);
+                    });
+                }, 800);
+            },
+            offset: '60%',
+            triggerOnce: true
+        };
+
+
+
         //------- Add delayed waypoints. ------
         setTimeout(function(){
             $(aboutContent).waypoint(point);
             $(dataChart).waypoint(point);
             $(imgGallery).waypoint(point);
-            $(gallery).waypoint(point);
-            $(images).waypoint(point);
-            $(video).waypoint(point);
+            $(gallery).waypoint(imgPoint);
             $(locations).waypoint(point);
         }, 3000);
 
+        //------- images hover effect -------
+        var imgHover = function(){
+            $(this).addClass('rotate');
+        };
+
+        // center the video
+        $(pizzaVid).css({left: (window.outerWidth-400)/2});
+
+
+        // event listener for image hover.
+        $(images).hover(imgHover, function(){
+            $(this).removeClass('rotate');
+        });
     };
+
+
 
 //---------------- End of content functionality --------------------
 
