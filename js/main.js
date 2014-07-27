@@ -54,8 +54,7 @@
             locations = $('#locations')
         ;
 
-        // hide the images on load
-        $(imageList).fadeOut(0);
+
 
         // configure waypoint options.
         var point = {
@@ -72,7 +71,7 @@
                 $(this).animate({opacity: 1}, 500);
                 setTimeout(function(){
                     $(imageList).each(function(i, elem){
-                        $(elem).fadeIn(i*800);
+                        $(elem).animate({opacity: 1},i*300);
                     });
                 }, 800);
             },

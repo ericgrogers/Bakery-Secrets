@@ -184,7 +184,7 @@ h2 {
 #about {
     width: 960px;
     height: 400px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     clear:both;
 }
 
@@ -249,7 +249,7 @@ h2 {
     font-size: 24px;
     color: #ffb000;
     text-align: center;
-    margin: 50px auto 0 auto;
+    margin: 80px auto 10px auto;
 }
 
 #imageGallery h3>a {
@@ -271,6 +271,7 @@ h2 {
     height: 150px;
     margin: 20px 0 0 85px;
     position: relative;
+    opacity: 0;
     float: left;
 }
 #gallery img {
@@ -320,6 +321,7 @@ aside h4 {
     font-size: 24px;
     font-family: Chewy, Cursive;
     color: #ffb000;
+    margin: 50px 0 20px;
 }
 
 #pizzaVid {
