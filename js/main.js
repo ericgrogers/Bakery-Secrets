@@ -68,10 +68,10 @@
         //  waypoint for the images li.
         var imgPoint = {
             handler: function(){
-                $(this).animate({opacity: 1}, 500);
+                //$(this).animate({opacity: 1}, 500);
                 setTimeout(function(){
-                    $(imageList).each(function(i, elem){
-                        $(elem).animate({opacity: 1},i*300);
+                    $(images).each(function(i, elem){
+                        $(elem).animate({opacity: 1},i*200);
                     });
                 }, 800);
             },
