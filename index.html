@@ -9,6 +9,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/chart.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/chart_ie.css" />
+    <![endif]-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- Modernizr -->
     <script type="text/javascript" src="includes/modernizr.js"></script>
@@ -23,7 +27,7 @@
         <ul>
             <li><a href="#">contact us</a></li>
             <li><a href="#">gallery</a></li>
-            <li><a href="#">locations</a></li>
+            <li><a href="#">supplies</a></li>
         </ul>
     </nav>
     <div id="branding">
@@ -57,13 +61,34 @@
             you!</h4>
         <p>We take pride in helping people learn how to bake like a professional. From 5 course meals,
             to succulent deserts, we will help you become the best you can be.</p>
-        <p>Simply <a href="#">sign up</a> for our newsletter and you will be well on your way to baking the food of
-       your dreams! </p>
+        <p>Simply <a href="#">sign up</a> for our newsletter and you will be well on your way to baking the food
+            you've always wanted to! </p>
     </div><!-- end of the about content -->
 
+    <!-- Data chart -->
     <div class="dataChart">
-        <p>Data Chart!</p>
-    </div><!-- end of the data chart -->
+        <div class="chart-title">
+            <h2>Most popular baking classes.</h2>
+            <p>Percentage of total subscribers enrolled in the class.</p>
+        </div>
+        <div class="chart-content">
+            <div class="chart-y-axis">
+                <p style="top:0px;">100</p>
+                <p style="bottom:225px;">75</p>
+                <p style="bottom:150px;">50</p>
+                <p style="bottom:60px;">25</p>
+                <p style="bottom:0px;">0</p>
+            </div>
+            <div class="chart-area" bar-spacing="50">
+                <div bar-value="37" label="Bread"   class="chart-bar bread"></div>
+                <div bar-value="62" label="Cakes" class="chart-bar cake"></div>
+                <div bar-value="52" label="Pies"   class="chart-bar pies"></div>
+            </div>
+            <div class="chart-x-axis"></div>
+        </div>
+    </div>
+    <!-- end of the chart -->
+
 </section>
 
 <!--separator goes here. -->
@@ -95,13 +120,6 @@
         <source type="video/webm" src="media/video/pizza.webm" />
         <!-- Ogg/Vorbis for older Firefox and Opera versions -->
         <source type="video/ogg" src="media/video/pizza.ogv" />
-        <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
-        <object type="application/x-shockwave-flash" data="flashmediaelement.swf">
-            <param name="movie" value="flashmediaelement.swf" />
-            <param name="flashvars" value="controls=true&file=media/video/vid1/vid1.f4v" />
-            <!-- Image as a last resort -->
-            <img src="media/images/poster.jpg" title="No video playback capabilities" />
-        </object>
     </video>
     <!-- separator goes here. -->
 </aside>
@@ -118,8 +136,13 @@
     </div>
 </section>
 
+    <section id="contact">
+
+
+    </section>
+
 <footer>
-    <p id="copyright">Bakery Secrets &copy;2014 Eric G Rogers</p>
+    <p id="copyright">Bakery Secrets &copy;2014</p>
 </footer>
 
 </div><!-- End of the wrapper -->
@@ -131,6 +154,7 @@
 <!-- Include plugins -->
 <script src="includes/plugins/waypoints.min.js"></script>
 <script type="text/javascript" src="includes/plugins/lightbox.min.js"></script>
+<script type="text/javascript" src="includes/plugins/chart.js"></script>
 
 <!-- Include site JS -->
 <script src="js/main.js"></script>

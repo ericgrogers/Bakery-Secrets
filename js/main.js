@@ -61,7 +61,18 @@
             handler: function(){
                 $(this).animate({opacity: 1}, 500);
             },
-            offset: '50%',
+            offset: '70%',
+            triggerOnce: true
+        };
+
+        // waypoint for the data chart
+        var dataPoint = {
+            handler: function(){
+                $(this).animate({opacity: 1}, 500, function(){
+                    animateChart();
+                });
+            },
+            offset: '40%',
             triggerOnce: true
         };
 
@@ -84,7 +95,7 @@
         //------- Add delayed waypoints. ------
         setTimeout(function(){
             $(aboutContent).waypoint(point);
-            $(dataChart).waypoint(point);
+            $(dataChart).waypoint(dataPoint);
             $(imgGallery).waypoint(point);
             $(gallery).waypoint(imgPoint);
             $(locations).waypoint(point);
