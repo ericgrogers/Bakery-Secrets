@@ -8,7 +8,7 @@ body { font-family: Arial; font-size: 12px; }
 /* Option 1 */
 
 .chart-area .chart-bar { background-repeat: repeat; }
-.chart-area .chart-bar.sporting    { background-color: none; background-image: url(../images/ie_transparency.png); }
+.chart-area .chart-bar.sporting    { background-color: none; background-image: url(../media/images/lightbox/ie_transparency.png); }
 .chart-area .chart-bar.hoursewares { background-color: none; background-image: url(../images/ie_transparency.png); }
 .chart-area .chart-bar.shipping    { background-color: none; background-image: url(../images/ie_transparency.png); }
 .chart-area .chart-bar.clothing    { background-color: none; background-image: url(../images/ie_transparency.png); }

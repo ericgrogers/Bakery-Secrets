@@ -332,9 +332,7 @@ aside h4 {
     margin: 0 auto;
     background: #fff;
     position: relative;
-    left: 0;
-    top: 10px;
-    z-index: 50;
+    z-index: 1000;
 }
 
 .separator2 {

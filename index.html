@@ -16,6 +16,10 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- Modernizr -->
     <script type="text/javascript" src="includes/modernizr.js"></script>
+
+    <!-- testing --><script src="includes/jquery.min.js"></script>
+    <script src="includes/plugins/mep/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="includes/plugins/mep/mediaelementplayer.css" /><!-- end test -->
 </head>
 <body>
 
@@ -113,19 +117,21 @@
 <!-- video -->
 <aside id="video">
     <h4>You'll learn how to make more than just the sweet stuff!</h4>
-    <video id="pizzaVid" poster="media/images/poster.jpg" controls="controls" preload="auto">
+    <div id="pizzaVid">
+    <video width="480" height="225" poster="media/images/poster.jpg" controls="controls" preload="auto">
         <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
         <source type="video/mp4" src="media/video/pizza.mp4" />
         <!-- Ogg/Vorbis for older Firefox and Opera versions -->
         <source type="video/ogg" src="media/video/pizza.ogv" />
         <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
-        <object type="application/x-shockwave-flash" data="pizza.swf">
-            <param name="movie" value="pizza.swf" />
-            <param name="flashvars" value="controls=true&file=media/video/pizza.mp4" />
-            <!-- Image as a last resort -->
-            <img src="media/images/poster.jpg" title="No video playback capabilities" />
+        <object width="480" height="225" type="application/x-shockwave-flash" data="flashmediaelement.swf">
+            <param name="movie" value="flashmediaelement.swf" />
+            <param name="flashvars" value="controls=true&amp;poster=myvideo.jpg&amp;file=media/video/pizza.mp4
+            " />
+            <img src="media/images/poster.jpg" width="400" height="225" title="No video playback capabilities" />
         </object>
     </video>
+        </div>
     <!-- separator goes here. -->
 </aside>
 <div class="separator2"></div>
@@ -153,8 +159,8 @@
 </div><!-- End of the wrapper -->
 
 <!-- Include jQuery CDN with local fallback. -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="includes/jquery.min.js"><\/script>')</script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+<!--<script>window.jQuery || document.write('<script src="includes/jquery.min.js"><\/script>')</script>-->
 
 <!-- Include plugins -->
 <script src="includes/plugins/waypoints.min.js"></script>

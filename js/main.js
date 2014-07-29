@@ -107,7 +107,6 @@
         };
 
         // center the video
-        $(pizzaVid).css({left: (window.outerWidth-400)/2});
 
 
         // event listener for image hover.
@@ -189,6 +188,12 @@
             setTimeout(function(){
                 $('#signup').animate({opacity: 1}, 500);
             }, 2000);
+
+
+
+            $('video,audio').mediaelementplayer({
+                framesPerSecond: 60
+            });
 
             loadContent();
         };
