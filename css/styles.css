@@ -326,12 +326,17 @@ aside h4 {
     margin: 50px 0 20px;
 }
 
+#video {
+    opacity: 0;
+}
+
 #pizzaVid {
     width: 400px;
     height: 225px;
     margin: 0 auto;
     background: #fff;
     position: relative;
+    left: -40px;
     z-index: 1000;
 }
 
@@ -343,21 +348,48 @@ aside h4 {
     top: -125px;
 }
 
+.separator2:after {
+    content: '';
+    clear: both;
+}
+
 /*--------- Map and Location info ---------*/
 
 #locations {
     width: 960px;
-    margin: 0 auto;
+    margin: 100px auto 50px;
+    opacity: 0;
+}
+
+#locations:after {
+    content: '';
+    clear: both;
 }
 
 #map {
-    width: 580px;
-    height: 300px;
-    background: #555;
+    width: 430px;
+    height: 320px;
+    background: url("../media/images/MOmap.png") no-repeat;
     float: left;
     display: block;
 }
 
+#mapDetails {
+    width: 380px;
+    height: 300px;
+    float: left;
+    background: #666;
+
+}
+
+/*------------- Footer --------------*/
+
+footer {
+    width: 100%;
+    display: inline-block;
+    margin: 50px auto;
+    text-align: center;
+}
 /********** Animations ******************/
 
 .rotate {

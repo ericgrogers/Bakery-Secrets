@@ -47,7 +47,6 @@
             dataChart = $('.dataChart'),
             imgGallery = $('#imageGallery'),
             gallery = $(imgGallery).find('#gallery'),
-            imageList = $(gallery).find('li'),
             images = $(gallery).find('img'),
             video = $('#video'),
             pizzaVid = $('#pizzaVid'),
@@ -98,6 +97,7 @@
             $(dataChart).waypoint(dataPoint);
             $(imgGallery).waypoint(point);
             $(gallery).waypoint(imgPoint);
+            $(video).waypoint(point);
             $(locations).waypoint(point);
         }, 3000);
 
@@ -188,12 +188,7 @@
             setTimeout(function(){
                 $('#signup').animate({opacity: 1}, 500);
             }, 2000);
-
-
-
-            $('video,audio').mediaelementplayer({
-                framesPerSecond: 60
-            });
+            $('video').mediaelementplayer();
 
             loadContent();
         };
