@@ -2,6 +2,24 @@
 
 (function($){
 
+    //=========== Site Functionality =====================
+
+    var linkColors = function(){
+        var link = $('a');
+
+        $(link).on('click', function(e){
+
+            $(link).each(function(){
+                $(this).attr('id', '');
+            });
+
+            $(this).attr('id', 'active');
+
+            e.preventDefault();
+            return false;
+        });
+    };
+
     //========== Load the Header ========================
     var loadHead = function(){
 
@@ -49,8 +67,7 @@
             gallery = $(imgGallery).find('#gallery'),
             images = $(gallery).find('img'),
             video = $('#video'),
-            pizzaVid = $('#pizzaVid'),
-            locations = $('#locations')
+            supplies = $('#supplies')
         ;
 
 
@@ -98,7 +115,7 @@
             $(imgGallery).waypoint(point);
             $(gallery).waypoint(imgPoint);
             $(video).waypoint(point);
-            $(locations).waypoint(point);
+            $(supplies).waypoint(point);
         }, 3000);
 
         //------- images hover effect -------
@@ -179,6 +196,10 @@
     };
 //----------------- End of slider functionality. --------------------------
 
+    //================ Map Functionality =========================
+
+
+
     //============= INIT ========================================
         var init = function(){
             loadHead();
@@ -191,6 +212,7 @@
             $('video').mediaelementplayer();
 
             loadContent();
+            linkColors();
         };
 
 

@@ -65,6 +65,8 @@ body {
     color: #470d00;
 }
 
+
+
 /*--------- Header ----------*/
 
 header {
@@ -355,15 +357,58 @@ aside h4 {
 
 /*--------- Map and Location info ---------*/
 
-#locations {
+#supplies {
     width: 960px;
+    height: 400px;
     margin: 100px auto 50px;
+
     opacity: 0;
 }
 
-#locations:after {
+#supplies:after {
     content: '';
     clear: both;
+}
+
+#suppliesContent {
+    background-color: #fff;
+    border: 3px solid #eee;
+    border-radius: 10px;
+    width: 380px;
+    height: 300px;
+    float: left;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#supplies h4 {
+    font-family: Chewy,Cursive;
+    font-size: 1.5em;
+    color: #ffb000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#supplies h5 {
+    font-size: 1.2em;
+}
+
+#supplies p {
+    color: rgba(71, 13, 0, 0.8);
+    padding-bottom: 15px;
+
+}
+
+#supplies ul {
+    margin-top: 10px;
+}
+
+#supplies ul li {
+    padding-bottom: 5px;
+}
+.frosted, .goodslice, .batterup, .franklin, .goldenpie {
+    color: #ffb000;
+    text-decoration:  none;
 }
 
 #map {
@@ -382,13 +427,23 @@ aside h4 {
 
 }
 
+#active {
+    color: #9e001e;
+}
+
+
 /*------------- Footer --------------*/
 
 footer {
     width: 100%;
+    height: 50px;
+    background: url("../media/images/backgrounds/brown-stripes.gif");
     display: inline-block;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
+    padding-bottom: 0;
     text-align: center;
+    color: #ffe78f;
+    line-height: 3;
 }
 /********** Animations ******************/
 
