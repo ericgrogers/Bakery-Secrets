@@ -8,6 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
 
     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/egrModal.css">
     <link rel="stylesheet" type="text/css" href="css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="css/chart.css">
     <!--[if lt IE 9]>
@@ -17,7 +18,10 @@
     <!-- Modernizr -->
     <script type="text/javascript" src="includes/modernizr.js"></script>
 
-    <!-- testing --><script src="includes/jquery.min.js"></script>
+    <!-- Include jQuery CDN with local fallback. -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="includes/jquery.min.js"><\/script>')</script>
+
     <script src="includes/plugins/mep/mediaelement-and-player.min.js"></script>
     <link rel="stylesheet" href="includes/plugins/mep/mediaelementplayer.css" /><!-- end test -->
 </head>
@@ -29,7 +33,7 @@
 <header>
     <nav>
         <ul>
-            <li><a href="#">sign up</a></li>
+            <li><a href="#" class="modal-open">sign up</a></li>
             <li><a href="#gallery">gallery</a></li>
             <li><a href="#supplies">supplies</a></li>
         </ul>
@@ -54,7 +58,7 @@
 
     <div id="signup">
         <h3>Learn to bake like a pro!</h3>
-        <button id="signup_btn"></button>
+        <button id="signup_btn" class="modal-open"></button>
     </div><!-- end of the signup cta -->
 </section>
 
@@ -65,7 +69,8 @@
             you!</h4>
         <p>We take pride in helping people learn how to bake like a professional. From 5 course meals,
             to succulent deserts, we will help you become the best you can be.</p>
-        <p>Simply <a href="#">sign up</a> for our newsletter and you will be well on your way to baking the food
+        <p>Simply <a href="#" class="modal-open">sign up</a> for our newsletter and you will be well on your way to
+            baking the food
             you've always wanted to! </p>
     </div><!-- end of the about content -->
 
@@ -100,7 +105,7 @@
 
 <!-- Image Gallery -->
 <section id="imageGallery">
-    <h3>Just a few reasons you'll want to <a href="#">Sign Up!</a></h3>
+    <h3>Just a few reasons you'll want to <a href="#" class="modal-open">Sign Up!</a></h3>
         <div id="gallery">
             <ul>
                 <li><a href="media/images/gallery/full1.jpg" data-lightbox="gallery" data-title="Wonderful Gourmet Cupcakes."><img id="img1" src="media/images/gallery/thumb1.jpg" alt=""/></a></li>
@@ -169,11 +174,25 @@
 
 </div><!-- End of the wrapper -->
 
-<!-- Include jQuery CDN with local fallback. -->
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-<!--<script>window.jQuery || document.write('<script src="includes/jquery.min.js"><\/script>')</script>-->
+<!-- Sign up modal -->
+<div class="modal">
+    <form>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <label for="fname">First Name</label>
+            <input id="fname" name="fname" type="text" required="true" placeholder="Jane">
+            <label for="lname">Last Name</label>
+            <input id="lname" name="lname" type="text" required="true" placeholder="Doe">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required="true" placeholder="jdoe@example.com">
+            <button id="send">Send</button>
+        </fieldset>
+    </form>
+</div>
+
 
 <!-- Include plugins -->
+<script src="includes/plugins/jquery.egrModal.js"></script>
 <script src="includes/plugins/waypoints.min.js"></script>
 <script type="text/javascript" src="includes/plugins/lightbox.min.js"></script>
 <script type="text/javascript" src="includes/plugins/chart.js"></script>

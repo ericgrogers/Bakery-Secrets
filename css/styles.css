@@ -478,5 +478,46 @@ footer {
     transform: rotate(-10deg);
 }
 
+/************** Modals *****************/
+
+/*---- sign up modal ------*/
+
+.modal legend {
+    text-align: center;
+    font-family: Chewy, Cursive;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.modal label {
+    font-size: 1.2em;
+    float: left;
+    clear: both;
+}
+
+.modal input {
+    font-size: 1.2em;
+    width: 300px;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 5px 0 5px 10px;
+    float: left;
+    clear: both;
+    border: 1px solid #999;
+    box-shadow: 0 1px 3px rgba(2, 32, 100, 0.3);
+}
+
+#send {
+    background: #04dd04;
+    width: 150px;
+    height: 50px;
+    float: left;
+    clear: both;
+    border: 3px solid #04dd04;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
 
 

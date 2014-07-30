@@ -292,6 +292,7 @@
 
     //============= INIT ========================================
         var init = function(){
+            $('.modal').egrModal();
             loadHead();
             setTimeout(function(){
                 slider();
@@ -304,6 +305,7 @@
             loadContent();
             linkColors();
             hideMarker();
+
         };
 
 
