@@ -5,7 +5,8 @@
     //=========== Site Functionality =====================
 
     var linkColors = function(){
-        var link = $('a');
+        var link = $('header a, #supplies a');
+
 
         $(link).on('click', function(e){
 
@@ -15,11 +16,20 @@
 
             $(this).attr('id', 'active');
 
+            // check to see if the clicked link was for the map.
+            checkLink($(this).attr('class'));
+
+
             e.preventDefault();
             return false;
         });
     };
 
+    var clearLinkColors = function(){
+        $('header a, #supplies a').each(function(){
+            $(this).attr('id', '');
+        })
+    };
     //========== Load the Header ========================
     var loadHead = function(){
 
@@ -84,26 +94,39 @@
         // waypoint for the data chart
         var dataPoint = {
             handler: function(){
+                clearLinkColors();
                 $(this).animate({opacity: 1}, 500, function(){
                     animateChart();
                 });
             },
             offset: '40%',
-            triggerOnce: true
+            triggerOnce: false
         };
 
         //  waypoint for the images li.
         var imgPoint = {
             handler: function(){
-                //$(this).animate({opacity: 1}, 500);
+                clearLinkColors();
+                $('nav a').eq(1).attr('id','active');
                 setTimeout(function(){
                     $(images).each(function(i, elem){
                         $(elem).animate({opacity: 1},i*200);
                     });
                 }, 800);
             },
-            offset: '60%',
-            triggerOnce: true
+            offset: '40%',
+            triggerOnce: false
+        };
+
+        // waypoint for the supplies section
+        var supPoint = {
+            handler: function(){
+                clearLinkColors();
+                $('nav a').eq(2).attr('id', 'active');
+                $(this).animate({opacity: 1}, 500);
+            },
+            offset: '50%',
+            triggerOnce: false
         };
 
 
@@ -115,7 +138,7 @@
             $(imgGallery).waypoint(point);
             $(gallery).waypoint(imgPoint);
             $(video).waypoint(point);
-            $(supplies).waypoint(point);
+            $(supplies).waypoint(supPoint);
         }, 3000);
 
         //------- images hover effect -------
@@ -198,7 +221,74 @@
 
     //================ Map Functionality =========================
 
+    var checkLink = function(link){
 
+        var mapPos;
+
+        switch (link) {
+            case 'frosted':
+                addMarker('St. Louis', 265, 110);
+                break;
+            case 'goodslice':
+                addMarker('Jefferson City', 167, 120);
+                break;
+            case 'batterup':
+                addMarker('Farmington', 270, 180);
+                break;
+            case 'franklin':
+                addMarker('Branson', 120, 240);
+                break;
+            case 'goldenpie':
+                addMarker('Kansas City', 60, 90);
+                break;
+            default :
+                hideMarker();
+        }
+
+    };
+
+    var addMarker = function(city, x, y){
+        var marker = $('#marker');
+        var cityName = $('#city').text(city);
+        $(marker).css({
+            left: x,
+            top: y
+        }).show();
+
+        $(cityName).css({
+            left: x -25,
+            top: y
+        }).show();
+
+
+    };
+
+    var hideMarker = function(){
+        $('#marker, #city').hide();
+    };
+
+
+    //============ Global Event Listeners =================
+
+    $('nav a').eq(0).on('click', function(e){
+
+        e.preventDefault();
+        return false;
+    });
+
+    $('nav a').eq(1).on('click', function(e){
+
+        $("html, body").animate({ scrollTop: $('#gallerySeparator').offset().top}, 1000);
+        e.preventDefault();
+        return false
+    });
+
+    $('nav a').eq(2).on('click', function(e){
+
+        $("html, body").animate({ scrollTop: $('#supplies').offset().top}, 1000);
+        e.preventDefault();
+        return false
+    });
 
     //============= INIT ========================================
         var init = function(){
@@ -213,6 +303,7 @@
 
             loadContent();
             linkColors();
+            hideMarker();
         };
 
 

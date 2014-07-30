@@ -30,8 +30,8 @@
     <nav>
         <ul>
             <li><a href="#">sign up</a></li>
-            <li><a href="#">gallery</a></li>
-            <li><a href="#">supplies</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#supplies">supplies</a></li>
         </ul>
     </nav>
     <div id="branding">
@@ -96,7 +96,7 @@
 </section>
 
 <!--separator goes here. -->
-<div class="separator"></div>
+<div class="separator" id="gallerySeparator"></div>
 
 <!-- Image Gallery -->
 <section id="imageGallery">
@@ -139,15 +139,19 @@
 <!-- Locations -->
 <section id="supplies">
     <h4>Need Baking Supplies?</h4>
-    <div id="map"></div>
+    <div id="map">
+        <p id="marker"></p>
+        <p id="city"></p>
+    </div>
 
     <div id="suppliesContent">
 
-        <p>We have partnered with several local markets to provide our subscribers discounts on all of their baking
+        <p>We have partnered with several local markets to provide our subscribers discounts on all of their
+            baking
             supplies!</p>
         <p>Just show them your membership card at checkout and save up to 50% off of your purchase.</p>
         <div id="markets">
-            <h5>Click on a market to view it on the map.</h5>
+            <h5>Click to show the city for each market.</h5>
             <ul>
                 <li><a href="#" class="frosted" id="active">Frosted</a></li>
                 <li><a href="#" class="goodslice">A Good Slice</a></li>
