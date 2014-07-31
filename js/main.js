@@ -10,7 +10,7 @@
         yep: 'js/success.js',
         nope: ["includes/webshim/minified/polyfiller.js"],
         complete: function(){
-            if(Modernizr.input.required && Modernizr.inputtypes.email){
+            if(!Modernizr.input.required && !Modernizr.inputtypes.email){
                 Modernizr.load('js/inputFail.js');
             }
             if (!Modernizr.video){
