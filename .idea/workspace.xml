@@ -2,250 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="279cc416-d0de-4ede-8c9a-66fb1bf9c55b" name="Default" comment="add flash fallback for video">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/loader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vidFail.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/extras/modernizr-custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/polyfiller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/$ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvas/canvas2png.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvas/flashcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvas/flashcanvas.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvas/proxy.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvas/save.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvasPro/canvas2png.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvasPro/flash10canvas.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvasPro/flash9canvas.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvasPro/flashcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvasPro/proxy.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/FlashCanvasPro/save.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/color-picker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/10.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/11.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/12.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/13.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/14.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/15.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/16.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/17.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/18.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/19.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/20.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/22.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/23.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/24.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/25.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/26.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/27.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/28.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/29.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/30.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/31.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/32.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/33.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/6.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/combos/comboinfo.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/details.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/dom-extend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/es5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/excanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/filereader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-combat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-datalist-lazy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-datalist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-message.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-native-extend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-number-date-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-number-date-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-shim-extend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-shim-extend2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-validation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/form-validators.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/forms-picker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/geolocation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-ch-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-pt-PT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/i18n/formcfg-zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/ChangeLog.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/ReadMe.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/images/AlphaBar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/images/Bars.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/images/Maps.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/images/NoColor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/images/bar-opacity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/images/map-opacity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/images/mappoint.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/images/picker.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/images/preview-opacity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/images/rangearrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/jpicker/jpicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/mediaelement-core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/mediaelement-jaris.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/mediaelement-native-fix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/mediaelement-yt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/plugins/jquery.ui.position.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/range-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/config.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/forms-ext.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/forms.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/progress.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/scss/_api-forms-ext.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/scss/_api-shim.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/scss/_extends.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/scss/forms-ext.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/scss/shim.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/styles/shim.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/swf/JarisFLVPlayer.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/swf/filereader.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/swfmini.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/track-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/dev/shims/track.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/extras/modernizr-custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/polyfiller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/$ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/FlashCanvas/canvas2png.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/FlashCanvas/flashcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/FlashCanvas/flashcanvas.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/FlashCanvasPro/canvas2png.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/FlashCanvasPro/flash10canvas.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/FlashCanvasPro/flash9canvas.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/FlashCanvasPro/flashcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/color-picker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/10.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/11.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/12.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/13.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/14.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/15.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/16.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/17.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/18.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/19.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/20.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/22.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/23.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/24.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/25.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/26.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/27.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/28.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/29.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/30.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/31.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/32.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/33.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/6.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/combos/9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/details.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/dom-extend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/es5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/excanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/filereader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-combat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-datalist-lazy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-datalist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-message.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-native-extend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-number-date-api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-number-date-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-shim-extend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-shim-extend2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-validation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/form-validators.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/forms-picker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/geolocation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-ch-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-pt-PT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/i18n/formcfg-zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/images/AlphaBar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/images/Bars.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/images/Maps.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/images/NoColor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/images/bar-opacity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/images/map-opacity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/images/mappoint.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/images/picker.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/images/preview-opacity.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/images/rangearrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/jpicker/jpicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/mediaelement-core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/mediaelement-jaris.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/mediaelement-native-fix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/mediaelement-yt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/plugins/jquery.ui.position.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/range-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/styles/forms-ext.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/styles/forms.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/styles/progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/styles/progress.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/styles/shim.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/swf/JarisFLVPlayer.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/swf/filereader.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/swfmini.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/track-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/webshim/minified/shims/track.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/inputFail.js" afterPath="$PROJECT_DIR$/js/inputFail.js" />
     </list>
     <ignored path="Bakery-Secrets.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -288,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25862068" vertical-offset="0" max-vertical-offset="5070">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5070">
               <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
@@ -322,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inputFail.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="inputFail.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/inputFail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.06465517" vertical-offset="0" max-vertical-offset="464">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
               </folding>
@@ -367,11 +124,11 @@
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/includes/inputFail.js" />
         <option value="$PROJECT_DIR$/js/success.js" />
-        <option value="$PROJECT_DIR$/js/inputFail.js" />
         <option value="$PROJECT_DIR$/js/vidFail.js" />
         <option value="$PROJECT_DIR$/js/loader.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/inputFail.js" />
       </list>
     </option>
   </component>
@@ -957,21 +714,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/inputFail.js">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5070">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/inputFail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25862068" vertical-offset="0" max-vertical-offset="5070">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
+        <state vertical-scroll-proportion="0.06465517" vertical-offset="0" max-vertical-offset="464">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
