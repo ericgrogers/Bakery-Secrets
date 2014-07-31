@@ -6,15 +6,16 @@
     //==========================================================
 
     Modernizr.load({
-        test: Modernizr.input.required && Modernizr.inputtypes.email,
+        test: Modernizr.input.required && Modernizr.inputtypes.email && Modernizr.video,
         yep: 'js/success.js',
         nope: ["includes/webshim/minified/polyfiller.js"],
         complete: function(){
-            if(!Modernizr.input.required && !Modernizr.inputtypes.email){
+            if(Modernizr.input.required && Modernizr.inputtypes.email){
                 Modernizr.load('js/inputFail.js');
-                console.log("shim loaded loaded");
-            }else {
-                console.log('complete loaded.')
+            }
+            if (!Modernizr.video){
+                Modernizr.load('js/vidFail.js');
+                console.log('got vid');
             }
         }
     });
@@ -327,4 +328,6 @@
 
 
     init();
+
+
 }(jQuery));
