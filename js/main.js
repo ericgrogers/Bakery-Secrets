@@ -2,6 +2,23 @@
 
 (function($){
 
+    //================ Testing with Modernizr ==================
+    //==========================================================
+
+    Modernizr.load({
+        test: Modernizr.input.required1 && Modernizr.inputtypes.email,
+        yep: 'js/success.js',
+        nope: ["includes/webshim/minified/polyfiller.js"],
+        complete: function(){
+            if(Modernizr.input.required && !Modernizr.inputtypes.email){
+                Modernizr.load('js/inputFail.js');
+                console.log("shim loaded loaded");
+            }else {
+                console.log('complete loaded.')
+            }
+        }
+    });
+
     //=========== Site Functionality =====================
 
     var linkColors = function(){
@@ -300,7 +317,7 @@
             setTimeout(function(){
                 $('#signup').animate({opacity: 1}, 500);
             }, 2000);
-            $('video').mediaelementplayer();
+
 
             loadContent();
             linkColors();
