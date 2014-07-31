@@ -6,12 +6,13 @@
     //==========================================================
 
     Modernizr.load({
-        test: Modernizr.input.required && Modernizr.inputtypes.email && Modernizr.video && Modernizr.jQuery,
+        test: Modernizr.input.required && Modernizr.inputtypes.email && Modernizr.video,
         yep: 'js/success.js',
         nope: ["includes/webshim/minified/polyfiller.js"],
         complete: function(){
             if(!Modernizr.input.required && !Modernizr.inputtypes.email){
                 Modernizr.load('js/inputFail.js');
+                console.log('input fail');
             }
             if (!Modernizr.video){
                 Modernizr.load('js/vidFail.js');
@@ -58,6 +59,9 @@
         var tagline = $('header h2');
 
         window.onload = function(){
+
+            // fade out the preloader
+            $('.preloader').fadeOut(1000);
 
             //wrapper
             $(wrapper).show(0);
@@ -323,8 +327,6 @@
 
         };
 
-
     init();
-
 
 }(jQuery));

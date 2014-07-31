@@ -65,6 +65,17 @@ body {
     color: #470d00;
 }
 
+.preloader {
+    width: 120px;
+    height: 26px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 99999999;
+    background: url('../media/images/preloader.gif') no-repeat;
+    top: 45%;
+    left: 45%;
+    cursor: wait;
+}
 
 
 /*--------- Header ----------*/
