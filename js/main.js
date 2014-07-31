@@ -6,7 +6,7 @@
     //==========================================================
 
     Modernizr.load({
-        test: Modernizr.input.required1 && Modernizr.inputtypes.email,
+        test: Modernizr.input.required && Modernizr.inputtypes.email,
         yep: 'js/success.js',
         nope: ["includes/webshim/minified/polyfiller.js"],
         complete: function(){
