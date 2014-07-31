@@ -6,7 +6,7 @@
     //==========================================================
 
     Modernizr.load({
-        test: Modernizr.input.required && Modernizr.inputtypes.email && Modernizr.video,
+        test: Modernizr.input.required && Modernizr.inputtypes.email && Modernizr.video && Modernizr.jQuery,
         yep: 'js/success.js',
         nope: ["includes/webshim/minified/polyfiller.js"],
         complete: function(){
@@ -241,8 +241,6 @@
 
     var checkLink = function(link){
 
-        var mapPos;
-
         switch (link) {
             case 'frosted':
                 addMarker('St. Louis', 265, 110);
@@ -318,7 +316,6 @@
             setTimeout(function(){
                 $('#signup').animate({opacity: 1}, 500);
             }, 2000);
-
 
             loadContent();
             linkColors();
