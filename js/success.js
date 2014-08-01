@@ -3,5 +3,5 @@
  */
 
 
-
+// This file loads if the browser supports all requirements.
 

@@ -136,6 +136,7 @@
                         $(elem).animate({opacity: 1},i*200);
                     });
                 }, 800);
+                $('#largerImage').fadeIn(1500);
             },
             offset: '40%',
             triggerOnce: false
@@ -152,8 +153,6 @@
             triggerOnce: false
         };
 
-
-
         //------- Add delayed waypoints. ------
         setTimeout(function(){
             $(aboutContent).waypoint(point);
@@ -169,16 +168,11 @@
             $(this).addClass('rotate');
         };
 
-        // center the video
-
-
         // event listener for image hover.
         $(images).hover(imgHover, function(){
             $(this).removeClass('rotate');
         });
     };
-
-
 
 //---------------- End of content functionality --------------------
 
@@ -321,6 +315,8 @@
             setTimeout(function(){
                 $('#signup').animate({opacity: 1}, 500);
             }, 2000);
+
+            $('#largerImage').fadeOut(0);
 
             loadContent();
             linkColors();
