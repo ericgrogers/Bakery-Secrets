@@ -60,9 +60,6 @@
 
         window.onload = function(){
 
-            // fade out the preloader
-            $('.preloader').fadeOut(1000);
-
             //wrapper
             $(wrapper).show(0);
 
@@ -85,6 +82,10 @@
                     $(tagline).fadeIn();
                 }, 2000);
             });
+
+            // fade out the preloader
+            $('.preloader').delay(2000).fadeOut(1000);
+
 
         }
     };
