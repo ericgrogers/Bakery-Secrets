@@ -1,0 +1,49 @@
+
+@charset "UTF-8";
+
+.dataChart { width: 500px; }
+
+.chart-title { background: url("../media/images/backgrounds/brown-stripes.gif"); padding: 5px 0 5px 15px; margin: 0; width: 100%; }
+#about .chart-title h2 { margin: 0; color: rgb(255, 231,143); font-size: 1.5em; font-family: Georgia, Times, "Times New Roman", serif; width: 100%; }
+#about .chart-title p { margin: 0; color: rgba(255,255,255,0.5); display: inline-block; padding-top: 5px; }
+
+.chart-content { height: 340px; position: relative; overflow: hidden; margin: 5px 0 0 0; }
+
+.chart-y-axis { width: 50px; height: 300px; position: absolute; top: 0; left: 0; background: #ffe78f; }
+#about .chart-y-axis p { margin: 0 0 0 5px; padding: 0 0 0 5px; width: 35px; position: absolute; border-bottom: 1px solid rgba(71, 13, 0, 0.3); color: #470d00; }
+.chart-x-axis { height: 30px; position: absolute; top: 300px; left: 50px; background: #ffe78f;}
+#about .chart-x-axis p { position: absolute; top: 5px; width: 80px; color: #fff; text-align: center; }
+.chart-area {
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 50px;
+	background: #ffe78f url(../media/images/backgrounds/screen.png) repeat;
+    background-position: -50px 0;
+}
+
+.chart-area .chart-bar {
+	position: absolute;
+	bottom: 0;
+	width: 40px;
+	height: 0;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-repeat: no-repeat;
+	background-position: 50% bottom;
+}
+
+.chart-area .chart-bar.bread    { background-color: rgba(71, 13, 0, 0.6); background-image: url(../media/images/chartSprite.png); background-position: -40px bottom; overflow: hidden; }
+.chart-area .chart-bar.cake { background-color: rgba(248,51,255,.6); background-image: url(../media/images/chartSprite.png); background-position: -80px bottom; overflow: hidden; }
+.chart-area .chart-bar.pies    { background-color: rgba(0,21,255,.6); background-image: url(../media/images/chartSprite.png); background-position: 0 bottom; overflow: hidden; }
+
+
+#about .chart-area .chart-bar p { margin: 5px 0 0 0; text-align: center; color: #fff; display: none; }
+
+
+

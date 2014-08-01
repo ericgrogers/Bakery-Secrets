@@ -2,9 +2,57 @@
 
 (function($){
 
-    // Load the Header
+    //================ Testing with Modernizr ==================
+    //==========================================================
+
+    Modernizr.load({
+        test: Modernizr.input.required && Modernizr.inputtypes.email && Modernizr.video,
+        yep: 'js/success.js',
+        nope: ["includes/webshim/minified/polyfiller.js"],
+        complete: function(){
+            if(!Modernizr.input.required && !Modernizr.inputtypes.email){
+                Modernizr.load('js/inputFail.js');
+                console.log('input fail');
+            }
+            if (!Modernizr.video){
+                Modernizr.load('js/vidFail.js');
+                console.log('got vid');
+            }
+        }
+    });
+
+    //=========== Site Functionality =====================
+
+    var linkColors = function(){
+        var link = $('header a, #supplies a');
+
+
+        $(link).on('click', function(e){
+
+            $(link).each(function(){
+                $(this).attr('id', '');
+            });
+
+            $(this).attr('id', 'active');
+
+            // check to see if the clicked link was for the map.
+            checkLink($(this).attr('class'));
+
+
+            e.preventDefault();
+            return false;
+        });
+    };
+
+    var clearLinkColors = function(){
+        $('header a, #supplies a').each(function(){
+            $(this).attr('id', '');
+        })
+    };
+    //========== Load the Header ========================
     var loadHead = function(){
 
+        var wrapper = $('#wrapper');
         var header = $('header');
         var navLinks = $('nav a');
         var logo = $('h1');
@@ -12,11 +60,14 @@
 
         window.onload = function(){
 
+            //wrapper
+            $(wrapper).show(0);
+
             // header
             $(header).hide(0).slideDown(1000);
 
             // navigation links
-            $(navLinks).fadeOut().each(function(i,elem){
+            $(navLinks).fadeOut(0).each(function(i,elem){
                 setTimeout(function(){
                     $(elem).fadeIn(i*200);
                 }, 2000);
@@ -32,16 +83,108 @@
                 }, 2000);
             });
 
+            // fade out the preloader
+            $('.preloader').delay(2000).fadeOut(1000);
+
+
         }
     };
+//--------------------- End of header functionality. ---------------------
 
-    // Slider functionality.
+    //=============== load the content with Waypoints. ====================================
+    var loadContent = function(){
+
+        var aboutContent = $('.aboutContent'),
+            dataChart = $('.dataChart'),
+            imgGallery = $('#imageGallery'),
+            gallery = $(imgGallery).find('#gallery'),
+            images = $(gallery).find('img'),
+            video = $('#video'),
+            supplies = $('#supplies')
+        ;
+
+
+
+        // configure waypoint options.
+        var point = {
+            handler: function(){
+                $(this).animate({opacity: 1}, 500);
+            },
+            offset: '70%',
+            triggerOnce: true
+        };
+
+        // waypoint for the data chart
+        var dataPoint = {
+            handler: function(){
+                clearLinkColors();
+                $(this).animate({opacity: 1}, 500, function(){
+                    animateChart();
+                });
+            },
+            offset: '40%',
+            triggerOnce: false
+        };
+
+        //  waypoint for the images li.
+        var imgPoint = {
+            handler: function(){
+                clearLinkColors();
+                $('nav a').eq(1).attr('id','active');
+                setTimeout(function(){
+                    $(images).each(function(i, elem){
+                        $(elem).animate({opacity: 1},i*200);
+                    });
+                }, 800);
+                $('#largerImage').fadeIn(1500);
+            },
+            offset: '40%',
+            triggerOnce: false
+        };
+
+        // waypoint for the supplies section
+        var supPoint = {
+            handler: function(){
+                clearLinkColors();
+                $('nav a').eq(2).attr('id', 'active');
+                $(this).animate({opacity: 1}, 500);
+            },
+            offset: '50%',
+            triggerOnce: false
+        };
+
+        //------- Add delayed waypoints. ------
+        setTimeout(function(){
+            $(aboutContent).waypoint(point);
+            $(dataChart).waypoint(dataPoint);
+            $(imgGallery).waypoint(point);
+            $(gallery).waypoint(imgPoint);
+            $(video).waypoint(point);
+            $(supplies).waypoint(supPoint);
+        }, 3000);
+
+        //------- images hover effect -------
+        var imgHover = function(){
+            $(this).addClass('rotate');
+        };
+
+        // event listener for image hover.
+        $(images).hover(imgHover, function(){
+            $(this).removeClass('rotate');
+        });
+    };
+
+//---------------- End of content functionality --------------------
+
+
+
+    //================ Slider functionality. ==================================
     var slider = function(){
 
         // configurations
         var width = 1440;
-        var animationSpeed = 1000;
-        var pause = 5000;
+        var animationSpeed = 600;
+        var pause = 8000;
         var currentSlide = 1;
         var signUp = $('#signup');
 
@@ -91,8 +234,80 @@
         // Initialize the slider.
         sliderInit();
     };
+//----------------- End of slider functionality. --------------------------
 
+    //================ Map Functionality =========================
+
+    var checkLink = function(link){
+
+        switch (link) {
+            case 'frosted':
+                addMarker('St. Louis', 265, 110);
+                break;
+            case 'goodslice':
+                addMarker('Jefferson City', 167, 120);
+                break;
+            case 'batterup':
+                addMarker('Farmington', 270, 180);
+                break;
+            case 'franklin':
+                addMarker('Branson', 120, 240);
+                break;
+            case 'goldenpie':
+                addMarker('Kansas City', 60, 90);
+                break;
+            default :
+                hideMarker();
+        }
+
+    };
+
+    var addMarker = function(city, x, y){
+        var marker = $('#marker');
+        var cityName = $('#city').text(city);
+        $(marker).css({
+            left: x,
+            top: y
+        }).show();
+
+        $(cityName).css({
+            left: x -25,
+            top: y
+        }).show();
+
+
+    };
+
+    var hideMarker = function(){
+        $('#marker, #city').hide();
+    };
+
+
+    //============ Global Event Listeners =================
+
+    $('nav a').eq(0).on('click', function(e){
+
+        e.preventDefault();
+        return false;
+    });
+
+    $('nav a').eq(1).on('click', function(e){
+
+        $("html, body").animate({ scrollTop: $('#gallerySeparator').offset().top}, 1000);
+        e.preventDefault();
+        return false
+    });
+
+    $('nav a').eq(2).on('click', function(e){
+
+        $("html, body").animate({ scrollTop: $('#supplies').offset().top}, 1000);
+        e.preventDefault();
+        return false
+    });
+
+    //============= INIT ========================================
         var init = function(){
+            $('.modal').egrModal();
             loadHead();
             setTimeout(function(){
                 slider();
@@ -101,8 +316,14 @@
                 $('#signup').animate({opacity: 1}, 500);
             }, 2000);
 
+            $('#largerImage').fadeOut(0);
+
+            loadContent();
+            linkColors();
+            hideMarker();
+
         };
 
-
     init();
+
 }(jQuery));

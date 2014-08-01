@@ -8,23 +8,35 @@
     <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
 
     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/egrModal.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/chart.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/chart_ie.css" />
+    <![endif]-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- Modernizr -->
     <script type="text/javascript" src="includes/modernizr.js"></script>
+
 </head>
 <body>
+
+<div id="wrapper">
+
+<!-- Preloader image overlay -->
+<div class="preloader"></div>
 
 <!-- Branding -->
 <header>
     <nav>
         <ul>
-            <li><a href="#">contact us</a></li>
-            <li><a href="#">gallery</a></li>
-            <li><a href="#">locations</a></li>
+            <li><a href="#" class="modal-open">sign up</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#supplies">supplies</a></li>
         </ul>
     </nav>
     <div id="branding">
-        <h1><img src="images/logo.png" alt="Bakery Secrets">
+        <h1><img src="media/images/logo.png" alt="Bakery Secrets">
         </h1>
             <h2>Restaurant quality at home!</h2>
     </div>
@@ -34,72 +46,156 @@
 <section id="cta">
     <div id="slider">
         <ul class="slides">
-            <li class="slide"><img src="images/slider/slide1.jpg" alt=""/></li>
-            <li class="slide"><img src="images/slider/slide2.jpg" alt=""/></li>
-            <li class="slide"><img src="images/slider/slide3.jpg" alt=""/></li>
-            <li class="slide"><img src="images/slider/slide1.jpg" alt=""/></li>
+            <li class="slide"><img src="media/images/slider/slide1.jpg" alt=""/></li>
+            <li class="slide"><img src="media/images/slider/slide2.jpg" alt=""/></li>
+            <li class="slide"><img src="media/images/slider/slide3.jpg" alt=""/></li>
+            <li class="slide"><img src="media/images/slider/slide1.jpg" alt=""/></li>
         </ul>
     </div><!-- end of the image slider -->
 
     <div id="signup">
         <h3>Learn to bake like a pro!</h3>
-        <button id="signup_btn"></button>
+        <button id="signup_btn" class="modal-open"></button>
     </div><!-- end of the signup cta -->
 </section>
 
 <!-- About section, with data. -->
 <section id="about">
     <div class="aboutContent">
-    <p>Here at Bakery Secrets, we are passionate about fine baked foods.</p>
+        <h4>Here at Bakery Secrets we are passionate about fine baked foods, and we want to share our passion with
+            you!</h4>
+        <p>We take pride in helping people learn how to bake like a professional. From 5 course meals,
+            to succulent deserts, we will help you become the best you can be.</p>
+        <p>Simply <a href="#" class="modal-open">sign up</a> for our newsletter and you will be well on your way to
+            baking the food
+            you've always wanted to! </p>
     </div><!-- end of the about content -->
 
+    <!-- Data chart -->
     <div class="dataChart">
+        <div class="chart-title">
+            <h2>Most popular baking classes.</h2>
+            <p>Percentage of total subscribers enrolled in the class.</p>
+        </div>
+        <div class="chart-content">
+            <div class="chart-y-axis">
+                <p style="top:0px;">100</p>
+                <p style="bottom:225px;">75</p>
+                <p style="bottom:150px;">50</p>
+                <p style="bottom:60px;">25</p>
+                <p style="bottom:0px;">0</p>
+            </div>
+            <div class="chart-area" bar-spacing="50">
+                <div bar-value="37" label="Bread"   class="chart-bar bread"></div>
+                <div bar-value="62" label="Cakes" class="chart-bar cake"></div>
+                <div bar-value="52" label="Pies"   class="chart-bar pies"></div>
+            </div>
+            <div class="chart-x-axis"></div>
+        </div>
+    </div>
+    <!-- end of the chart -->
 
-    </div><!-- end of the data chart -->
 </section>
 
 <!--separator goes here. -->
-<div class="separator"></div>
+<div class="separator" id="gallerySeparator"></div>
 
 <!-- Image Gallery -->
 <section id="imageGallery">
-    <h3>Just a few reasons you'll want to <a href="#">Sign Up!</a></h3>
+    <h3>Just a few reasons you'll want to <a href="#" class="modal-open">Sign Up!</a></h3>
         <div id="gallery">
-            <img src="" alt=""/>
-            <img src="" alt=""/>
-            <img src="" alt=""/>
-            <img src="" alt=""/>
-            <img src="" alt=""/>
-            <img src="" alt=""/>
+            <ul>
+                <li><a href="media/images/gallery/full1.jpg" data-lightbox="gallery" data-title="Wonderful Gourmet Cupcakes."><img id="img1" src="media/images/gallery/thumb1.jpg" alt=""/></a></li>
+                <li><a href="media/images/gallery/full2.jpg" data-lightbox="gallery" data-title="Delicious Homemade Pizza."><img id="img2" src="media/images/gallery/thumb2.jpg" alt=""/></a></li>
+                <li><a href="media/images/gallery/full3.jpg" data-lightbox="gallery" data-title="Freshly Baked Croissants."><img id="img3" src="media/images/gallery/thumb3.jpg" alt=""/></a></li>
+                <li><a href="media/images/gallery/full4.jpg" data-lightbox="gallery" data-title="Prepping the dough."><img id="img4" src="media/images/gallery/thumb4.jpg" alt=""/></a></li>
+                <li><a href="media/images/gallery/full5.jpg" data-lightbox="gallery" data-title="Sweet Honey Cake."><img id="img5" src="media/images/gallery/thumb5.jpg" alt=""/></a></li>
+                <li><a href="media/images/gallery/full6.jpg" data-lightbox="gallery" data-title="Birthday Cupcakes with candy."><img id="img6" src="media/images/gallery/thumb6.jpg" alt=""/></a></li>
+            </ul>
+            <p id="largerImage">Click to view a larger image.</p>
         </div><!-- End of gallery -->
 </section>
 
-<!-- Page separator goes here. -->
-
 <!-- video -->
 <aside id="video">
-    <h4>More than just the sweet stuff!</h4>
-    <video></video>
+    <h4>You'll learn how to make more than just the sweet stuff!</h4>
+    <div id="pizzaVid">
+    <video width="480" height="225" poster="media/images/poster.jpg" controls="controls" preload="auto">
+        <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+        <source type="video/mp4" src="media/video/pizza.mp4" />
+        <!-- Ogg/Vorbis for older Firefox and Opera versions -->
+        <source type="video/ogg" src="media/video/pizza.ogv" />
+        <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
+        <object width="480" height="225" type="application/x-shockwave-flash" data="flashmediaelement.swf">
+            <param name="movie" value="flashmediaelement.swf" />
+            <param name="flashvars" value="controls=true&amp;poster=myvideo.jpg&amp;file=media/video/pizza.mp4
+            " />
+            <img src="media/images/poster.jpg" width="400" height="225" title="No video playback capabilities" />
+        </object>
+    </video>
+        </div>
+    <!-- separator goes here. -->
 </aside>
+<div class="separator2"></div>
 
 <!-- Locations -->
-<section id="locations">
+<section id="supplies">
+    <h4>Need Baking Supplies?</h4>
     <div id="map">
-
+        <p id="marker"></p>
+        <p id="city"></p>
     </div>
 
-    <div id="mapDetails">
+    <div id="suppliesContent">
 
+        <p>We have partnered with several local markets to provide our subscribers discounts on all of their
+            baking
+            supplies!</p>
+        <p>Just show them your membership card at checkout and save up to 50% off of your purchase.</p>
+        <div id="markets">
+            <h5>Click to show the city for each market.</h5>
+            <ul>
+                <li><a href="#" class="frosted" id="active">Frosted</a></li>
+                <li><a href="#" class="goodslice">A Good Slice</a></li>
+                <li><a href="#" class="batterup">Batter Up</a></li>
+                <li><a href="#" class="franklin">Franklin's Baking Supplies</a></li>
+                <li><a href="#" class="goldenpie">The Golden Pie</a></li>
+            </ul>
+        </div>
     </div>
 </section>
 
 <footer>
-    <p id="copyright">Bakery Secrets &copy;2014 Eric G Rogers</p>
+    <p id="copyright">Bakery Secrets &copy;2014</p>
 </footer>
+
+</div><!-- End of the wrapper -->
+
+<!-- Sign up modal (only visible when a sign up link is clicked.) -->
+<div class="modal">
+    <form>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <label for="fname">First Name</label>
+            <input id="fname" name="fname" type="text" required="true" placeholder="Jane">
+            <label for="lname">Last Name</label>
+            <input id="lname" name="lname" type="text" required="true" placeholder="Doe">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required="true" placeholder="jdoe@example.com">
+            <button id="send">Send</button>
+        </fieldset>
+    </form>
+</div><!-- End of the sign up modal. -->
 
 <!-- Include jQuery CDN with local fallback. -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="includes/jquery.min.js"><\/script>')</script>
+
+<!-- Include plugins -->
+<script src="includes/plugins/jquery.egrModal.js"></script>
+<script src="includes/plugins/waypoints.min.js"></script>
+<script type="text/javascript" src="includes/plugins/lightbox.min.js"></script>
+<script type="text/javascript" src="includes/plugins/chart.js"></script>
 
 <!-- Include site JS -->
 <script src="js/main.js"></script>
