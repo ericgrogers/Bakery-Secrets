@@ -387,9 +387,9 @@ aside h4 {
     border-radius: 10px;
     width: 380px;
     height: 300px;
-    float: left;
+    float: right;
     padding: 15px;
-    border-radius: 10px;
+
 }
 
 #supplies h4 {
